@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Video Banner with Image</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container for the video banner */
+        .video-banner {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            
+        }
+
+        /* Fullscreen video style */
+        .video-banner video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .full-image {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Fullscreen video style */
+        .full-image video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Image underneath the video banner */
+        .image-banner {
+            width: 120%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .image-banner img {
+            width: 120%;
+            max-width: 1900px;
+            height: 100px;
+            object-fit: fill; /* Make the image fit perfectly */
+        }
+
+        /* Fullscreen image underneath the image banner */
+        .full-image {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .full-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .social-icons {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+    </style>
+</head>
+<body>
+
+    <!-- Video Banner Section -->
+    <div class="video-banner">
+        <video autoplay muted loop>
+            <source src="five tips for great kin.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Image Banner Section (1900x100px) -->
+    <div class="Game On.png">
+        <img src="Game On.png" alt="Banner Image">
+    </div>
+
+    <!-- Fullscreen Image Section (Same size as video banner) -->
+    <div class="full-image">
+        <video autoplay muted loop>
+            <source src="Tokenomics.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+        <!-- Image Banner Section (1900x100px) -->
+    <div class="Game On.png">
+        <img src="Game On.png" alt="Banner Image">
+    </div>
+
+    <div class="full-image">
+        <img src="Tokenomics copy.jpg" alt="Fullscreen Image">
+    </div>
+
+    <div class="social-icons">
+        <a href="https://x.com/WAKEUP_SOLANA" target="_blank">
+            <img src="twitter.png" alt="Twitter">
+        </a>
+        <a href="https://t.me/+Ohmc3Xk9poJiZTM0" target="_blank">
+            <img src="telegram.png" alt="Telegram">
+        </a>
+    </div>
+
+</body>
+</html>
+
+
